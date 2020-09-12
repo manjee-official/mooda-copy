@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.manjee.mooda_copy.viewmodel.FabDialogViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabSmile"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="@color/colorAccent"
+            android:src="@drawable/ic_smile_white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/fabInit"
+            app:layout_constraintCircleAngle="20"
+            app:layout_constraintCircleRadius="120dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabMood"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="@color/colorAccent"
+            android:src="@drawable/ic_mood_white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/fabInit"
+            app:layout_constraintCircleAngle="60"
+            app:layout_constraintCircleRadius="120dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabMoodBad"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="@color/colorAccent"
+            android:src="@drawable/ic_mood_bad_white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/fabInit"
+            app:layout_constraintCircleAngle="100"
+            app:layout_constraintCircleRadius="140dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabFavorite"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="@color/colorAccent"
+            android:src="@drawable/ic_favorite_white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/fabInit"
+            app:layout_constraintCircleAngle="260"
+            app:layout_constraintCircleRadius="140dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabFace"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="@color/colorAccent"
+            android:src="@drawable/ic_face_white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/fabInit"
+            app:layout_constraintCircleAngle="300"
+            app:layout_constraintCircleRadius="120dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabChild"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="@color/colorAccent"
+            android:src="@drawable/ic_child_white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/fabInit"
+            app:layout_constraintCircleAngle="340"
+            app:layout_constraintCircleRadius="120dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabInit"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="@color/colorBlack"
+            android:onClick="@{() -> viewModel.clickFab()}"
+            android:src="@drawable/ic_add_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
