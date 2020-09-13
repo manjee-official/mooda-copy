@@ -10,41 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26744984-a685-4698-b84c-5b63a2d5ed74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/manjee/mooda_copy/ui/FabDialog.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/manjee/mooda_copy/util/CommonUtil.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/manjee/mooda_copy/viewmodel/FabDialogViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/manjee/mooda_copy/viewmodel/MainViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/fab_close.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/fab_open.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/fab_reverse_rotate.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/fab_rotate.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_add_white.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_child_white.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_close_white.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_face_white.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_favorite_white.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_mood_bad_white.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_mood_white.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_smile_white.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_fab.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_1_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_3_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_ktx_1_3_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_1_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_0_0_aar.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/melody.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/melody_regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add_stamp.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/manjee/mooda_copy/ui/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/manjee/mooda_copy/ui/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/manjee/mooda_copy/ui/FabDialog.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/manjee/mooda_copy/ui/FabDialog.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_fab.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_fab.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +44,9 @@
       <list>
         <option value="Class" />
         <option value="Kotlin Class" />
-        <option value="resourceFile" />
         <option value="Kotlin File" />
+        <option value="valueResourceFile" />
+        <option value="resourceFile" />
         <option value="layoutResourceFile" />
       </list>
     </option>
@@ -88,7 +64,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/anim" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/font" />
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -99,6 +75,7 @@
       <recent name="com.manjee.mooda_copy.ui" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspace\mooda-copy\MoodaCopy\app\src\main\res\font" />
       <recent name="C:\workspace\mooda-copy\MoodaCopy\app\src\main\res\anim" />
     </key>
   </component>
@@ -184,38 +161,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="744" y="172" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599900067373" />
-    <state x="540" y="275" key="AndroidCreateResourceDirectoryDialog" timestamp="1599922057269">
+    <state x="540" y="275" key="AndroidCreateResourceDirectoryDialog" timestamp="1599974024844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="540" y="275" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599922057269" />
-    <state x="545" y="282" key="AndroidCreateResourceFileDialog" timestamp="1599927915444">
+    <state x="540" y="275" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599974024844" />
+    <state x="545" y="282" key="AndroidCreateResourceFileDialog" timestamp="1599985000138">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="545" y="282" key="AndroidCreateResourceFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599927915444" />
+    <state x="545" y="282" key="AndroidCreateResourceFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599985000138" />
     <state x="745" y="282" key="FileChooserDialogImpl" timestamp="1599918479751">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="745" y="282" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599918479751" />
-    <state width="1877" height="230" key="GridCell.Tab.0.bottom" timestamp="1599928697242">
+    <state width="1340" height="214" key="GridCell.Tab.0.bottom" timestamp="1599976368953">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="230" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599928697242" />
-    <state width="1877" height="230" key="GridCell.Tab.0.center" timestamp="1599928697242">
+    <state width="1340" height="214" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599976368953" />
+    <state width="1340" height="214" key="GridCell.Tab.0.center" timestamp="1599976368953">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="230" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599928697242" />
-    <state width="1877" height="230" key="GridCell.Tab.0.left" timestamp="1599928697242">
+    <state width="1340" height="214" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599976368953" />
+    <state width="1340" height="214" key="GridCell.Tab.0.left" timestamp="1599976368953">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="230" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599928697242" />
-    <state width="1877" height="230" key="GridCell.Tab.0.right" timestamp="1599928697242">
+    <state width="1340" height="214" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599976368953" />
+    <state width="1340" height="214" key="GridCell.Tab.0.right" timestamp="1599976368953">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="230" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599928697242" />
+    <state width="1340" height="214" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599976368953" />
     <state x="540" y="263" key="IDE.errors.dialog" timestamp="1599926012563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="263" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599926012563" />
+    <state x="657" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1599971987722">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="657" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599971987722" />
     <state x="653" y="251" width="613" height="538" key="find.popup" timestamp="1599926687369">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
