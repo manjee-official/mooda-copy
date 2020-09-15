@@ -24,9 +24,7 @@ class FabDialog : BottomSheetDialogFragment() {
 
     private var isFabOpen = false
     private lateinit var mainFabOpen: Animation
-    private lateinit var mainFabClose: Animation
     private lateinit var mainFabRotate: Animation
-    private lateinit var mainFabReverseRotate: Animation
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -41,7 +39,7 @@ class FabDialog : BottomSheetDialogFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setStyle(STYLE_NORMAL, R.style.FabDialogTheme);
+        setStyle(STYLE_NORMAL, R.style.FabDialogTheme)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -59,10 +57,9 @@ class FabDialog : BottomSheetDialogFragment() {
         fabList.add(fabSmile)
 
         mainFabOpen = AnimationUtils.loadAnimation(context, R.anim.fab_open)
-        mainFabClose = AnimationUtils.loadAnimation(context, R.anim.fab_close)
         mainFabRotate = AnimationUtils.loadAnimation(context, R.anim.fab_rotate)
-        mainFabReverseRotate =
-            AnimationUtils.loadAnimation(context, R.anim.fab_reverse_rotate)
+
+        openFabGroup()
     }
 
     private fun subscribeUi() {
@@ -74,26 +71,20 @@ class FabDialog : BottomSheetDialogFragment() {
     }
 
     private fun openFabGroup() {
-        isFabOpen = if (isFabOpen) {
-            startFabAnimation()
-            false
-        } else {
+        isFabOpen = if (!isFabOpen) {
             startFabAnimation()
             true
+        } else {
+            dismiss()
+            false
         }
     }
 
     private fun startFabAnimation() {
         for (fab in fabList) {
-            if (isFabOpen) {
-                fabInit.startAnimation(mainFabReverseRotate)
-                    .apply { fabInit.setImageResource(R.drawable.ic_add_white) }
-                fab.startAnimation(mainFabClose)
-            } else {
-                fabInit.startAnimation(mainFabRotate)
-                    .apply { fabInit.setImageResource(R.drawable.ic_close_white) }
-                fab.startAnimation(mainFabOpen)
-            }
+            fabInit.startAnimation(mainFabRotate)
+                .apply { fabInit.setImageResource(R.drawable.ic_close_white) }
+            fab.startAnimation(mainFabOpen)
         }
     }
 }
