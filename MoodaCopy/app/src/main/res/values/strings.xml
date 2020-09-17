@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Mooda-copy</string>
     <string name="fab_text">오늘 하루는 어땠니?</string>
+
+    <!--  Emotion  -->
+    <string name="text_smile">smile</string>
 </resources>

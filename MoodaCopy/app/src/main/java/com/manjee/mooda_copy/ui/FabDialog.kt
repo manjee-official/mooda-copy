@@ -13,15 +13,19 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.manjee.mooda_copy.R
 import com.manjee.mooda_copy.databinding.DialogFabBinding
 import com.manjee.mooda_copy.viewmodel.FabDialogViewModel
+import com.manjee.mooda_copy.viewmodel.MainViewModel
 import kotlinx.android.synthetic.main.dialog_fab.*
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
-class FabDialog : BottomSheetDialogFragment() {
+class FabDialog(val mainViewModel: MainViewModel) : BottomSheetDialogFragment() {
 
     private lateinit var binding: DialogFabBinding
     private val viewModel: FabDialogViewModel by viewModels()
 
-    private var fabList: ArrayList<View> = ArrayList()
+    private val dateTime: LocalDateTime = LocalDateTime.now()
 
+    private var fabList: ArrayList<View> = ArrayList()
     private lateinit var mainFabOpen: Animation
     private lateinit var mainFabRotate: Animation
 
@@ -49,6 +53,8 @@ class FabDialog : BottomSheetDialogFragment() {
     }
 
     private fun init() {
+        dateTime.format(DateTimeFormatter.ofPattern("MMM yyyy"))
+
         fabList.add(fabChild)
         fabList.add(fabFace)
         fabList.add(fabFavorite)
@@ -67,18 +73,23 @@ class FabDialog : BottomSheetDialogFragment() {
             toggleFab.observe(this@FabDialog, Observer {
                 dismiss()
             })
+
+            clickEmotion.observe(this@FabDialog, Observer {
+                dismiss()
+                mainViewModel.setSelectEmotion(it)
+            })
         }
     }
 
     private fun startFabAnimation() {
-        tvDescription.startAnimation(mainFabOpen).apply {
-            fabInit.visibility = View.VISIBLE
-            fabInit.startAnimation(mainFabRotate)
-                .apply { fabInit.setImageResource(R.drawable.ic_close_white) }
-
-            for (fab in fabList) {
-                fab.startAnimation(mainFabOpen)
+        tvDescription.animate().setStartDelay(200).setDuration(1000).alpha(1F).withEndAction {
+            fabInit.animate().rotation(45f).setDuration(500).withStartAction {
+                for (fab in fabList) {
+                    fab.startAnimation(mainFabOpen)
+                }
             }
+        }.withStartAction {
+            fabInit.visibility = View.VISIBLE
         }
     }
 }
