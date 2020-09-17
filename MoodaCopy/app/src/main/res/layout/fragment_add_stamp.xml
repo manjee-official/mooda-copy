@@ -1,115 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <ImageButton
-        android:id="@+id/btnClose"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/ic_close_black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription" />
+    <data>
 
-    <TextView
-        android:id="@+id/tvMonth"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/melody"
-        android:textColor="@android:color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/btnClose"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/btnClose"
-        tools:text="SEPTEMBER 2020" />
-
-    <ImageButton
-        android:id="@+id/btnOk"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="15dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/ic_check_black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription" />
+        <variable
+            name="viewModel"
+            type="com.manjee.mooda_copy.viewmodel.AddStampViewModel" />
+    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/layoutContent"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:background="@drawable/border_add_stamp"
-        android:padding="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnClose">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
 
-        <TextView
-            android:id="@+id/tvDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/melody"
-            android:textSize="20sp"
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_close_black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="18" />
+            tools:ignore="ContentDescription" />
 
         <TextView
-            android:id="@+id/tvDay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:fontFamily="@font/melody"
-            android:textSize="15sp"
-            app:layout_constraintBottom_toBottomOf="@id/tvDate"
-            app:layout_constraintStart_toEndOf="@id/tvDate"
-            tools:text="FRI" />
-
-        <ImageView
-            android:id="@+id/ivSticker"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvDate"
-            tools:ignore="ContentDescription"
-            tools:src="@drawable/ic_check_black" />
-
-        <TextView
-            android:id="@+id/tvSticker"
+            android:id="@+id/tvMonth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/melody"
-            android:textSize="30sp"
-            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/btnClose"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ivSticker"
-            tools:text="기분 최고!" />
+            app:layout_constraintTop_toTopOf="@id/btnClose"
+            tools:text="SEPTEMBER 2020" />
 
-        <EditText
-            android:id="@+id/etContent"
+        <ImageButton
+            android:id="@+id/btnOk"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_check_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutContent"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:background="@android:color/transparent"
-            android:drawableEnd="@drawable/ic_close_black"
-            android:text="가나다라\n가나다라\n가나다라\n가나다라"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/border_add_stamp"
+            android:padding="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvSticker" />
+            app:layout_constraintTop_toBottomOf="@id/btnClose">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/melody"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="18" />
+
+            <TextView
+                android:id="@+id/tvDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/melody"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@id/tvDate"
+                app:layout_constraintStart_toEndOf="@id/tvDate"
+                tools:text="FRI" />
+
+            <ImageView
+                android:id="@+id/ivSticker"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDate"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/ic_check_black" />
+
+            <TextView
+                android:id="@+id/tvSticker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/melody"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivSticker"
+                tools:text="기분 최고!" />
+
+            <EditText
+                android:id="@+id/etContent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:drawableEnd="@drawable/ic_close_black"
+                android:text="가나다라\n가나다라\n가나다라\n가나다라"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSticker" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
