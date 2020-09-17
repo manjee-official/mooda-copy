@@ -22,7 +22,6 @@ class FabDialog : BottomSheetDialogFragment() {
 
     private var fabList: ArrayList<View> = ArrayList()
 
-    private var isFabOpen = false
     private lateinit var mainFabOpen: Animation
     private lateinit var mainFabRotate: Animation
 
@@ -44,6 +43,7 @@ class FabDialog : BottomSheetDialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         init()
         subscribeUi()
     }
@@ -59,32 +59,26 @@ class FabDialog : BottomSheetDialogFragment() {
         mainFabOpen = AnimationUtils.loadAnimation(context, R.anim.fab_open)
         mainFabRotate = AnimationUtils.loadAnimation(context, R.anim.fab_rotate)
 
-        openFabGroup()
+        startFabAnimation()
     }
 
     private fun subscribeUi() {
         with(viewModel) {
             toggleFab.observe(this@FabDialog, Observer {
-                openFabGroup()
+                dismiss()
             })
         }
     }
 
-    private fun openFabGroup() {
-        isFabOpen = if (!isFabOpen) {
-            startFabAnimation()
-            true
-        } else {
-            dismiss()
-            false
-        }
-    }
-
     private fun startFabAnimation() {
-        for (fab in fabList) {
+        tvDescription.startAnimation(mainFabOpen).apply {
+            fabInit.visibility = View.VISIBLE
             fabInit.startAnimation(mainFabRotate)
                 .apply { fabInit.setImageResource(R.drawable.ic_close_white) }
-            fab.startAnimation(mainFabOpen)
+
+            for (fab in fabList) {
+                fab.startAnimation(mainFabOpen)
+            }
         }
     }
 }
