@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -14,6 +15,7 @@
         android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/tvDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/melody"
@@ -21,6 +23,7 @@
             android:textColor="@android:color/white"
             android:textSize="30sp"
             android:textStyle="bold"
+            android:visibility="invisible"
             app:layout_constraintCircle="@id/fabInit"
             app:layout_constraintCircleAngle="0"
             app:layout_constraintCircleRadius="180dp"
@@ -126,9 +129,11 @@
             android:backgroundTint="@color/colorBlack"
             android:onClick="@{() -> viewModel.clickFab()}"
             android:src="@drawable/ic_add_white"
+            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
